@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image Fit in Parent Div with Tailwind CSS</title>
+<link rel="stylesheet" href="/style.css">
+<script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-900 ">
+    <section class=" p-3  bg-orange-400 overflow-hidden ">
+        <!-- hero nav start -->
+        <div class="sand container mx-auto">
+            <nav class="flex list-none justify-between  text-white px-12">
+                <img src="/images/omnifood-logo.png" alt="" class="w-40 cursor-pointer">
+                <ul class="big-screen-mod flex space-x-6 right-0">
+                    <li><a class="links hover:text-slate-300" href="">Home</a></li>
+                    <li><a class="links hover:text-slate-300" href="">About</a></li>
+                    <li><a class="links hover:text-slate-300" href="">Price</a></li>
+                    <li><a class="links py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="">Try for free</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- hero nav end -->
+
+        <!-- hero main -->
+        <div class="container mx-auto text-white">
+            <div class="grid-sanduuq px-20 flex  items-center justify-around mt-28 mb-10">
+                <div class="text-part max-w-xl">
+                    <h2 class="heading text-5xl	font-bold leading-normal	">
+                        A healthy meal <br> delivered to your door ,<br> every single day
+                    </h2>
+                    <p class="text text-xl	 mb-10">The smart 365-days-per-year food subscription that will <br> make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
+                    <a class="links py-2 px-4 mr-3 bg-blue-400 text-white rounded hover:bg-blue-500  transition" href="">start eating well</a>
+                    <a class="links py-2 px-4 bg-black text-white rounded hover:bg-gray-500 transition" href="">learn more</a>
+<div class="image-part flex  h-10 w-10  mt-20">
+    <img src="/images/customer-1.jpg" alt="" class="border-2 border-white rounded-full ">
+    <img src="/images/customer-2.jpg" alt=""  class="border-2 border-white rounded-full -ml-1">
+    <img src="/images/customer-1.jpg" alt=""  class="border-2 border-white rounded-full -ml-1">
+    <img src="/images/customer-2.jpg" alt=""  class="border-2 border-white rounded-full -ml-1">
+
+</div>
+                </div>
+                
+                <img src="/images/hero.png" alt="" class="w-[40%] ">
+            </div>
+        </div>
+    </section>
+
+    
+
+</body>
+</html>
