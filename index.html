@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,47 +7,98 @@
 <link rel="stylesheet" href="/style.css">
 <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-slate-900 ">
-    <section class=" p-3  bg-orange-400 overflow-hidden ">
+
+<body class="bg-white ">
+    <section class=" p-3  bg-[#fdf2e9] overflow-hidden ">
         <!-- hero nav start -->
         <div class="sand container mx-auto">
-            <nav class="flex list-none justify-between  text-white px-12">
+            <nav class="flex list-none justify-between sm:hidden md:flex text-black px-12">
                 <img src="image/omnifood-logo.png" alt="" class="w-40 cursor-pointer">
                 <ul class="big-screen-mod flex space-x-6 right-0">
                     <li><a class="links hover:text-slate-300" href="">Home</a></li>
                     <li><a class="links hover:text-slate-300" href="">About</a></li>
                     <li><a class="links hover:text-slate-300" href="">Price</a></li>
-                    <li><a class="links py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="">Try for free</a></li>
+                    <li><a class="links py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="#sec2">Try for free</a></li>
                 </ul>
             </nav>
         </div>
         <!-- hero nav end -->
 
         <!-- hero main -->
-        <div class="container mx-auto text-white">
-            <div class="grid-sanduuq px-20 flex  items-center justify-around mt-28 mb-10">
-                <div class="text-part max-w-xl">
-                    <h2 class="heading text-5xl	font-bold leading-normal	">
-                        A healthy meal <br> delivered to your door ,<br> every single days
+        <div class="container mx-auto text-black">
+            <div class="f-sanduuq  px-20 flex  md:items-center md:gap-36 sm:flex-col sm:items-center sm:justify-center md:flex-row mt-28 ">
+                <div class="text-part flex flex-col justify-between md:items-start sm:items-center md:text-left  sm:w-full md:max-w-xl">
+                    <h2 class="heading md:text-left sm:text-center sm:text-2xl sm:w-full md:text-5xl tracking-[-0.5] md:mb-7 text-[#333]  font-bold md:leading-[1.05]">
+                        A healthy meal <br> delivered to your door , every single days
                     </h2>
-                    <p class="text text-xl	 mb-10">The smart 365-days-per-year food subscription that will <br> make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
-                    <a class="links py-2 px-4 mr-3 bg-blue-400 text-white rounded hover:bg-blue-500  transition" href="">start eating well</a>
-                    <a class="links py-2 px-4 bg-black text-white rounded hover:bg-gray-500 transition" href="">learn more</a>
-<div class="image-part flex  h-10 w-10  mt-20">
-    <img src="image/customer-1.jpg" alt="" class="border-2 border-white rounded-full ">
-    <img src="image/customer-2.jpg" alt=""  class="border-2 border-white rounded-full -ml-1">
-    <img src="image/customer-1.jpg" alt=""  class="border-2 border-white rounded-full -ml-1">
-    <img src="image/customer-2.jpg" alt=""  class="border-2 border-white rounded-full -ml-1">
+                    <p class="text md:text-left sm:text-center text-xl mb-10">The smart 365-days-per-year food subscription that will <br> make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
+                    <div class="linksr">
+                    <a class="links py-2  px-4 mr-3 bg-blue-400 text-white rounded hover:bg-blue-500  transition" href="#price">start eating well</a>
+                    <a class="links py-2 px-4 bg-black text-white rounded hover:bg-gray-500 transition" href="">learn more</a></div>
+<div class=" flex mt-20">
+    <img src="image/customer-1.jpg" alt="" class="border-2  h-10 w-10 border-white rounded-full ">
+    <img src="image/customer-2.jpg" alt=""  class="border-2 h-10 w-10 border-white rounded-full -ml-1">
+    <img src="image/customer-1.jpg" alt=""  class="border-2  h-10 w-10 border-white rounded-full -ml-1">
+    <img src="image/customer-2.jpg" alt=""  class="border-2  h-10 w-10 border-white rounded-full -ml-1">
 
 </div>
                 </div>
                 
-                <img src="image/hero.png" alt="" class="w-[40%] ">
+                <img src="image/hero.png" alt="" class="xl:w-[40%] sm:w-[60%] sm:mt-5 md:mt-0">
             </div>
         </div>
     </section>
 
+    <section class="my-14" id="sec2">
+<div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
+    <div class="grid md:grid-cols-2 items-center px-5 gap-y-5 text-white">
+        <!-- the first card start -->
+        <img src="image/app-screen-1.png" alt="" class="w-[30%] justify-self-center">
+        <div class="part-1 flex flex-col gap-0">
+            <h1 class="numbers text-8xl text-gray-400">01</h1>
+            <h2 class="heading text-[#333] text-4xl font-semibold">Receive meals at convenient time</h2>
+            <p class="sub-heading">Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
+            <p class="-mt-2 text-black mt-">Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!</p>
+        </div>
+        <!-- the first card end -->
+        <!-- the second card start -->
+    
+        <div class="part-1 flex flex-col gap-0 md:order-3 order-2">
+            <h1 class="numbers text-8xl text-gray-400">02</h1>
+            <h2 class="heading text-[#333] text-4xl font-semibold">Tell us what you like (and what not)</h2>
+            <p class="sub-heading">Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
+            <p class="-mt-2 text-black mt-">Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!</p>
+        </div>
+    
+        <img src="image/app-screen-1.png" alt="" class="w-[30%] justify-self-center md:order-4 order-1">
+        <!-- the second card end -->
+    
+        <img src="image/app-screen-1.png" alt="" class="w-[30%] justify-self-center md:order-5 order-3">
+        <div class="part-1 flex flex-col gap-0 md:order-6 order-4">
+            <h1 class="numbers text-8xl text-gray-400">03</h1>
+            <h2 class="heading text-[#333] text-4xl font-semibold">Receive meals at convenient time</h2>
+            <p class="sub-heading">Once per week, approve the meal plan generated for you by Omnifood AI. You can change ingredients, swap entire meals, or even add your own recipes.</p>
+            <p class="-mt-2 text-black mt-">Never again waste time thinking about what to eat! Omnifood AI will create a 100% personalized weekly meal plan just for you. It makes sure you get all the nutrients and vitamins you need, no matter what diet you follow!</p>
+        </div>
+    </div>
     
 
+
+</div>
+    </section>
+    <section class="price my-14" id="price">
+        <div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
+          <div class="grid   md:grid-cols-2 sm:grid-cols-1">
+<div class="flex1 bg-yellow-600 w-72 md:justify-self-end sm:justify-self-center">
+<p class="lorem w-72">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo assumenda harum asperiores! Nulla quas velit cum! Aperiam deserunt molestiae molestias ut aspernatur aut odit error eum culpa, hic quibusdam in.</p>
+</div>
+<div class="flex2	w-72 md:justify-self-center sm:justify-self-center bg-blue-600">
+Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id voluptatum tempora qui repudiandae dolorum? Sunt, illum doloremque assumenda sint maiores commodi ad impedit molestiae deleniti placeat at fugit quaerat officia!
+</div>
+        </div>
+    </div>
+
+    </section>
+      
 </body>
 </html>
