@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Fit in Parent Div with Tailwind CSS</title>
 <!-- <link rel="stylesheet" href="/style.css"> -->
-<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="/src/output.css">
 <script defer src="/main.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -141,7 +141,7 @@
 </h1>
 <div class="grid sm:mt-20 md:mt-20 sm:grid-cols-1 sm:items-center md:items-start md:grid-cols-2 lg:grid-cols-3 md:gap-6  gap-y-12">
     <!-- card -1 start -->
-    <div class="group shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden   duration-600 hover:-translate-y-2 transition-transform  duration-500">
+    <div class="group shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden  transition-transform  duration-500  hover:-translate-y-2 ">
         <img src="image/gallery-7.jpg" alt="" class="w-80 rounded-t h-52 mb-5">
         <!-- flex-with-veg -->
         <div class="flex gap-1 py-3 px-5">
@@ -166,7 +166,7 @@
     
     <!-- card -1 end -->
        <!-- card -2 start -->
-       <div class="group hover:shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden group  duration-600 hover:-translate-y-2 transition-transform  duration-500">
+       <div class="group hover:shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden  transition-transform  duration-500 hover:-translate-y-2">
         <img src="image/gallery-7.jpg" alt="" class="w-80 rounded-t h-52 mb-5">
         <!-- flex-with-veg -->
         <div class="flex gap-1 py-3 px-5">
@@ -262,7 +262,9 @@
 </section>   
 <section class="gallery"></section>
 
-<div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
+<div class="container md:mx-auto md:px-32 p-5 sm:px-0 sm:mx-4">
+   <div class="flex"></div>
+
 </div>
 </main>
 </body>
