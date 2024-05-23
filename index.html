@@ -1,23 +1,48 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en" class="scroll-smooth overflow-scroll">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Image Fit in Parent Div with Tailwind CSS</title>
 <link rel="stylesheet" href="/style.css">
 <script src="https://cdn.tailwindcss.com"></script>
+<script defer src="/main.js"></script>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body class="bg-white ">
+
+<!-- <div class="login-part h-screen w-screen flex justify-center items-center mx-auto">
+<div class="log max-w-md  flex flex-col gap-3 p-4 rounded bg-slate-300">
+    <h1 class="heading text-xl	text-center font-semibold">Log in</h1>
+<label for="">user name</label>
+<input id="login-email" type="Email" placeholder="Enter your email" class="w-64 rounded h-8 px-4 outline-none">
+<label for="">Password</label>
+<input id="login-password" type="password" placeholder="Enter your password" class="w-64 rounded h-8 px-4 outline-none">
+<div class="self-center	bg-red-300">
+    <button  class="btn py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500">Log in</button>
+</div>
+</div>
+
+
+
+
+
+
+
+
+</div> -->
+
+<main class="">
     <section class=" p-3  bg-[#fdf2e9] overflow-hidden ">
         <!-- hero nav start -->
         <div class="sand container mx-auto">
             <nav class="flex list-none justify-between sm:hidden md:flex text-black px-12">
                 <img src="image/omnifood-logo.png" alt="" class="w-40 cursor-pointer">
                 <ul class="big-screen-mod flex space-x-6 right-0">
-                    <li><a class="links hover:text-slate-300" href="">Home</a></li>
-                    <li><a class="links hover:text-slate-300" href="">About</a></li>
-                    <li><a class="links hover:text-slate-300" href="">Price</a></li>
+                    <li><a class="links hover:text-orange-700" href="">Home</a></li>
+                    <li><a class="links hover:text-orange-700" href="">About</a></li>
+                    <li><a class="links hover:text-orange-700" href="">Price</a></li>
                     <li><a class="links py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="#sec2">Try for free</a></li>
                 </ul>
             </nav>
@@ -25,29 +50,40 @@
         <!-- hero nav end -->
 
         <!-- hero main -->
-        <div class="container mx-auto text-black">
-            <div class="f-sanduuq  px-20 flex  md:items-center md:gap-36 sm:flex-col sm:items-center sm:justify-center md:flex-row mt-28 ">
+        <div class="container md:mx-auto  text-black">
+            <div class="f-sanduuq  md:px-20 flex  md:items-center md:gap-36 sm:flex-col sm:items-center sm:justify-center md:flex-row mt-28 ">
                 <div class="text-part flex flex-col justify-between md:items-start sm:items-center md:text-left  sm:w-full md:max-w-xl">
                     <h2 class="heading md:text-left sm:text-center sm:text-2xl sm:w-full md:text-5xl tracking-[-0.5] md:mb-7 text-[#333]  font-bold md:leading-[1.05]">
                         A healthy meal <br> delivered to your door , every single days
                     </h2>
                     <p class="text md:text-left sm:text-center text-xl mb-10">The smart 365-days-per-year food subscription that will <br> make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
                     <div class="linksr">
-                    <a class="links py-2  px-4 mr-3 bg-blue-400 text-white rounded hover:bg-blue-500  transition" href="#price">start eating well</a>
-                    <a class="links py-2 px-4 bg-black text-white rounded hover:bg-gray-500 transition" href="">learn more</a></div>
-<div class=" flex mt-20">
+                    <a class="links py-2  px-4 mr-3 bg-blue-400 text-white rounded hover:bg-blue-500  transition" href="">start eating well</a>
+                 <a class="links py-2 px-4 bg-black text-white rounded hover:bg-gray-500 transition" href="#price">learn more</a></div>
+               
+                 <!-- text flext with part image start -->
+                 <div class="image-with-text flex items-center gap-4 mt-20">  
+                 <div class=" flex ">
     <img src="image/customer-1.jpg" alt="" class="border-2  h-10 w-10 border-white rounded-full ">
     <img src="image/customer-2.jpg" alt=""  class="border-2 h-10 w-10 border-white rounded-full -ml-1">
     <img src="image/customer-1.jpg" alt=""  class="border-2  h-10 w-10 border-white rounded-full -ml-1">
     <img src="image/customer-2.jpg" alt=""  class="border-2  h-10 w-10 border-white rounded-full -ml-1">
 
 </div>
-                </div>
+<p class="text-wp text-xl font-semibold	text-[#555]"><span class="text-orange-400 font-bold text-xl	">250,000+ </span>meals delivered last year!</p>
+</div> 
+                 <!-- text flext with part image end -->
+                
+</div>
                 
                 <img src="image/hero.png" alt="" class="xl:w-[40%] sm:w-[60%] sm:mt-5 md:mt-0">
             </div>
         </div>
     </section>
+<!-- flex-company-image -->
+<section class="company-image">
+
+</section>
 
     <section class="my-14" id="sec2">
 <div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
@@ -86,19 +122,137 @@
 
 </div>
     </section>
-    <section class="price my-14" id="price">
-        <div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
-          <div class="grid   md:grid-cols-2 sm:grid-cols-1">
-<div class="flex1 bg-yellow-600 w-72 md:justify-self-end sm:justify-self-center">
-<p class="lorem w-72">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Explicabo assumenda harum asperiores! Nulla quas velit cum! Aperiam deserunt molestiae molestias ut aspernatur aut odit error eum culpa, hic quibusdam in.</p>
-</div>
-<div class="flex2	w-72 md:justify-self-center sm:justify-self-center bg-blue-600">
-Lorem ipsum dolor sit amet consectetur, adipisicing elit. Id voluptatum tempora qui repudiandae dolorum? Sunt, illum doloremque assumenda sint maiores commodi ad impedit molestiae deleniti placeat at fugit quaerat officia!
-</div>
+<section class="price my-5 " id="price">
+    <!-- price start -->
+    <div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
+<p class="meals text-center text-orange-400 uppercase font-semibold">Melas</p>
+<h1 class="omni-food text-5xl font-semibold text-center	">Omnifood AI chooses from 5,000+ recipes
+</h1>
+<div class="grid sm:mt-20 md:mt-20 sm:grid-cols-1 sm:items-center md:items-start md:grid-cols-2 lg:grid-cols-3 md:gap-6  gap-y-12">
+    <!-- card -1 start -->
+    <div class="group shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden transition-transform transform hover:-translate-y-2">
+        <img src="image/gallery-7.jpg" alt="" class="w-80 rounded-t h-52 mb-5">
+        <!-- flex-with-veg -->
+        <div class="flex gap-1 py-3 px-5">
+            <p class="veg px-4 py-2 bg-green-600 rounded-full">VEGETARIAN</p>
+        </div>
+        <!-- icon flex -->
+        <div class="text-part-3 px-5 mb-5">
+            <div class="flex gap-2 mt-4">
+                <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z"/></svg>
+                <p class="text-icon-fl">650 calories</p>
+            </div>
+            <div class="flex gap-2 mt-4">
+                <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m175-120-56-56 410-410q-18-42-5-95t57-95q53-53 118-62t106 32q41 41 32 106t-62 118q-42 44-95 57t-95-5l-50 50 304 304-56 56-304-302-304 302Zm118-342L173-582q-54-54-54-129t54-129l248 250-128 128Z"/></svg>
+                <p class="text-icon-fl">NutriScore ® 74</p>
+            </div>
+            <div class="flex gap-2 mt-4">
+                <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                <p class="text-icon-fl">4.9 rating (537)</p>
+            </div>
         </div>
     </div>
+    
+    <!-- card -1 end -->
+       <!-- card -2 start -->
+       <div class="group hover:shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden group transition-transform  hover:-translate-y-2">
+        <img src="image/gallery-7.jpg" alt="" class="w-80 rounded-t h-52 mb-5">
+        <!-- flex-with-veg -->
+        <div class="flex gap-1 py-3 px-5">
+            <p class="veg px-4 py-2 bg-green-600 rounded-full">VEGETARIAN</p>
+        </div>
+        <!-- icon flex -->
+        <div class="text-part-3 px-5 mb-5">
+            <div class="flex gap-2 mt-4">
+                <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z"/></svg>
+                <p class="text-icon-fl">650 calories</p>
+            </div>
+            <div class="flex gap-2 mt-4">
+                <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m175-120-56-56 410-410q-18-42-5-95t57-95q53-53 118-62t106 32q41 41 32 106t-62 118q-42 44-95 57t-95-5l-50 50 304 304-56 56-304-302-304 302Zm118-342L173-582q-54-54-54-129t54-129l248 250-128 128Z"/></svg>
+                <p class="text-icon-fl">NutriScore ® 74</p>
+            </div>
+            <div class="flex gap-2 mt-4">
+                <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="m354-287 126-76 126 77-33-144 111-96-146-13-58-136-58 135-146 13 111 97-33 143ZM233-120l65-281L80-590l288-25 112-265 112 265 288 25-218 189 65 281-247-149-247 149Zm247-350Z"/></svg>
+                <p class="text-icon-fl">4.9 rating (537)</p>
+            </div>
+        </div>
+    </div>
+    
+    
+         <!-- card -2 end -->
+<!-- card-3 start  -->
+<div class="flex flex-col justify-self-center group">
+    <h1 class="heading-col3 text-3xl font-bold">Works with any diet
+    </h1>
+    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Vegetarian
 
-    </section>
-      
+        </p>
+    
+       </div>
+       <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Vegan
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Pescatarian
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Gluten-free
+
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Lactose-free
+
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Keto
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Paleo
+
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Low FODMAP
+
+        </p>
+    
+       </div>    <div class="flex-with-icon-text flex just-c gap-3 mt-4">
+        <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
+              <p class="text-icon-fl">Kid-friendly
+
+        </p>
+    
+       </div>
+</div>
+
+
+<!-- card-3 end  -->
+
+</div>
+<div class="see-more text-center">
+    <a href="#" class="inline-block text-lg	font-semibold mt-20 underline hover:no-underline text-orange-600 ">see more →</a>
+</div>
+    </div>
+<!-- price end -->
+</section>   
+<section class="gallery"></section>
+
+<div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
+</div>
+</main>
 </body>
 </html>
