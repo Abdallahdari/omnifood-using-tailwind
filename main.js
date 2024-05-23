@@ -8,6 +8,7 @@ pin:'1234',
 const main=document.querySelector('.hidden')
 const login=document.querySelector('.login-part')
 const btn=document.querySelector('.btn')
+// tijabo
 const inputemail=document.getElementById('login-email')
 const inputpass=document.getElementById('login-password')
 
