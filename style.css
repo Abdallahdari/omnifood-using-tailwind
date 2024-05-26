@@ -2,104 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
+body{
+    font-family: "Rubik", sans-serif;
 
-
-
+}
 .animto {
-  
-    overflow: hidden  ;
-      cursor: pointer;
-    transition:all .7s; /* Ensure the transition is also applied to the non-hover state */
-  }
-  .animto:hover {
-    overflow: hidden  ;
-  
-    transform: translateY(-1.2rem)
-  }
-  .gallery-item {
     overflow: hidden;
-  }
-  
-  .gallery-item img {
+    cursor: pointer;
+    transition: all 0.7s; 
+}
+.animto:hover {
+    overflow: hidden;
+    transform: translateY(-1.2rem);
+}
+.gallery-item {
+    overflow: hidden;
+}
+.gallery-item img {
     width: 100%;
     transition: all 0.4s;
-  }
-  
-  .gallery-item img:hover {
+}
+.gallery-item img:hover {
     transform: scale(1.1);
-  }
-  .nav-image{
-    height:20px ;
-  }
- 
-  @media(max-width: 640px) and (min-width: 350px){
-    .f-sanduuq{
-  flex-direction:column;
-  align-items:center;
+}
+.nav-image {
+    height: 20px;
+}
+
+@media (max-width: 640px) and (min-width: 350px) {
+    .f-sanduuq {
+        flex-direction: column;
+        align-items: center;
     }
-   
-    .more-img{
-        width:100%;
+    .more-img {
+        width: 100%;
     }
-    .big-screen-mod{
-        display:none;
+    .big-screen-mod {
+        display: none;
     }
-    .image-with-text{
-        flex-direction:column;
-  margin-bottom:12px;
+    .image-with-text {
+        flex-direction: column;
+        margin-bottom: 12px;
     }
     .links:link, .links:visited {
         font-size: 10px;
     }
-    .text-part{
-        align-items:center;
-   
-         
+    .text-part {
+        align-items: center;
     }
-    .text-wp{
-        font-size:20px;
+    .text-wp {
+        font-size: 20px;
     }
-    .heading-a{
-        font-size:30px;
+    .heading-a {
+        font-size: 30px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .text {
+        text-align: center;
+    }
+    .omni-food {
+        margin-bottom: 25px;
+    }
+    .company-i {
+        height: 10px;
+    }
+}
+
+@media (max-width: 350px) {
+    .f-sanduuq {
+        flex-direction: column;
+        align-items: center;
+    }
+    .image-with-text {
+        flex-direction: column;
+        margin-bottom: 12px;
         text-align:center;
-        margin-bottom:20px;
     }
-    .text{
-        text-align:center
-    }
-    .omni-food{
-        margin-bottom:25px;
-    }
-    .company-i{
-        height:10px;
-    }
-  }
-  @media(max-width: 350px){
-    .f-sanduuq{
-        flex-direction:column;
-            } 
-            .more-img{
-                width:100%;
-            }
-            .links:link, .links:visited {
-                font-size: 10px;
-            }
-            
-            .heading-a{
-                
-                margin-bottom:20px;
-            }
-            .image-with-text{
-                flex-direction:column;
-  
-            }
-            .comp{
-                gap:12px;
-                align-
-            }
-            .company-i{
-                height:5px;
-            }
-  
-  
-  }
+
+}
