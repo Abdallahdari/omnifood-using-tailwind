@@ -3,9 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Image Fit in Parent Div with Tailwind CSS</title>
+<title>omnifood in tailwind</title>
 <!-- <link rel="stylesheet" href="/style.css"> -->
 <link rel="stylesheet" href="/src/output.css">
+<link rel="stylesheet" href="/style.css">
+<link rel="icon" href="/favicon.png">
 <script defer src="/main.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -37,8 +39,8 @@
     <section class=" p-3  bg-[#fdf2e9] overflow-hidden ">
         <!-- hero nav start -->
         <div class="sand container mx-auto">
-            <nav class="flex list-none justify-between sm:hidden md:flex text-black px-12">
-                <img src="image/omnifood-logo.png" alt="" class="w-40 cursor-pointer">
+            <nav class="navbar flex list-none justify-between  md:flex text-black px-12">
+                <img src="image/omnifood-logo.png" alt="" class="nav-image cursor-pointer">
                 <ul class="big-screen-mod flex space-x-6 right-0">
                     <li><a class="links hover:text-orange-700" href="">Home</a></li>
                     <li><a class="links hover:text-orange-700" href="">About</a></li>
@@ -46,6 +48,10 @@
                     <li><a class="links py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="#sec2">Try for free</a></li>
                 </ul>
             </nav>
+            <!-- nav mobile start -->
+            
+            <!-- nav mobile end -->
+
         </div>
         <!-- hero nav end -->
 
@@ -53,8 +59,8 @@
         <div class="container md:mx-auto  text-black">
             <div class="f-sanduuq  md:px-20 flex  md:items-center md:gap-36 sm:flex-col sm:items-center sm:justify-center md:flex-row mt-28 ">
                 <div class="text-part flex flex-col justify-between md:items-start sm:items-center md:text-left  sm:w-full md:max-w-xl">
-                    <h2 class="heading md:text-left sm:text-center sm:text-2xl sm:w-full md:text-5xl tracking-[-0.5] md:mb-7 text-[#333]  font-bold md:leading-[1.05]">
-                        A healthy meal <br> delivered to your door , every single days
+                    <h2 class="heading-a md:text-left sm:text-center sm:text-2xl sm:w-full md:text-5xl tracking-[-0.5] md:mb-7 text-[#333]  font-bold md:leading-[1.05]">
+                        A healthy meal  delivered to your door , every single days
                     </h2>
                     <p class="text md:text-left sm:text-center text-xl mb-10">The smart 365-days-per-year food subscription that will <br> make you eat healthy again. Tailored to your personal tastes and nutritional needs.</p>
                     <div class="linksr">
@@ -85,12 +91,12 @@
     <div class="container md:mx-auto md:px-32 sm:px-0 sm:mx-4">
         <p class="text-center text-gray-400 font-semibold my-">AS FEATURED IN
         </p>
-    <div class="flex gap-10 md:justify-around md:gap-0 mt-5 brightness-0 justify-center	opacity-50	">
-        <img src="image/business-insider.png" alt="" class=" h-3 md:h-6">
-        <img src="image/forbes.png" alt="" class=" h-3 md:h-6">
-        <img src="image/techcrunch.png" alt="" class="  h-3 md:h-6">
-        <img src="image/the-new-york-times.png" alt="" class=" h-3 md:h-6">
-        <img src="image/usa-today.png" alt="" class=" h-3 md:h-6">
+    <div class="flex comp  md:justify-around md:gap-0 mt-5 brightness-0 justify-center	opacity-50	">
+        <img src="image/business-insider.png" alt="" class=" h-3 md:h-6 company-i">
+        <img src="image/forbes.png" alt="" class=" h-3 md:h-6 company-i">
+        <img src="image/techcrunch.png" alt="" class="  h-3 md:h-6 company-i" >
+        <img src="image/the-new-york-times.png" alt="" class=" h-3 md:h-6 company-i">
+        <img src="image/usa-today.png" alt="" class=" h-3 md:h-6 company-i">
     </div>
     
     </div>
@@ -141,14 +147,14 @@
 </h1>
 <div class="grid sm:mt-20 md:mt-20 sm:grid-cols-1 sm:items-center md:items-start md:grid-cols-2 lg:grid-cols-3 md:gap-6  gap-y-12">
     <!-- card -1 start -->
-    <div class="group shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden  transition-transform  duration-500  hover:-translate-y-2 ">
-        <img src="image/gallery-7.jpg" alt="" class="w-80 rounded-t h-52 mb-5">
+    <div class="group  justify-self-center flex flex-col rounded-xl   animto ">
+        <img src="image/gallery-7.jpg" alt="" class="more-img w-80 rounded-t h-52 mb-5">
         <!-- flex-with-veg -->
         <div class="flex gap-1 py-3 px-5">
-            <p class="veg px-4 py-2 bg-green-600 rounded-full">VEGETARIAN</p>
+            <p class="veg px-2 py-0 text-xs		 bg-green-600 rounded-full">VEGETARIAN</p>
         </div>
         <!-- icon flex -->
-        <div class="text-part-3 px-5 mb-5">
+        <div class="text-part-3 px-7 py-5 mb-5">
             <div class="flex gap-2 mt-4">
                 <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z"/></svg>
                 <p class="text-icon-fl">650 calories</p>
@@ -166,14 +172,17 @@
     
     <!-- card -1 end -->
        <!-- card -2 start -->
-       <div class="group hover:shadow-md justify-self-center flex flex-col rounded-xl overflow-hidden  transition-transform  duration-500 hover:-translate-y-2">
-        <img src="image/gallery-7.jpg" alt="" class="w-80 rounded-t h-52 mb-5">
+       <div class="group justify-self-center flex flex-col rounded-xl   animto ">
+        <img src="image/gallery-7.jpg" alt="" class="more-img w-80 rounded-t h-52 mb-5">
         <!-- flex-with-veg -->
         <div class="flex gap-1 py-3 px-5">
-            <p class="veg px-4 py-2 bg-green-600 rounded-full">VEGETARIAN</p>
+            <p class="veg px-2 py-0 text-xs		 bg-green-600 rounded-full">VEGEN</p>
+            <p class="veg px-2 py-0 text-xs	 bg-yellow-600 rounded-full">PALEO
+            </p>
+
         </div>
         <!-- icon flex -->
-        <div class="text-part-3 px-5 mb-5">
+        <div class="text-part-3 px-7 py-5 mb-5">
             <div class="flex gap-2 mt-4">
                 <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M240-400q0 52 21 98.5t60 81.5q-1-5-1-9v-9q0-32 12-60t35-51l113-111 113 111q23 23 35 51t12 60v9q0 4-1 9 39-35 60-81.5t21-98.5q0-50-18.5-94.5T648-574q-20 13-42 19.5t-45 6.5q-62 0-107.5-41T401-690q-39 33-69 68.5t-50.5 72Q261-513 250.5-475T240-400Zm240 52-57 56q-11 11-17 25t-6 29q0 32 23.5 55t56.5 23q33 0 56.5-23t23.5-55q0-16-6-29.5T537-292l-57-56Zm0-492v132q0 34 23.5 57t57.5 23q18 0 33.5-7.5T622-658l18-22q74 42 117 117t43 163q0 134-93 227T480-80q-134 0-227-93t-93-227q0-129 86.5-245T480-840Z"/></svg>
                 <p class="text-icon-fl">650 calories</p>
@@ -195,6 +204,7 @@
 <div class="flex flex-col justify-self-center group">
     <h1 class="heading-col3 text-3xl font-bold">Works with any diet
     </h1>
+    <div class="padd ">
     <div class="flex-with-icon-text flex just-c gap-3 mt-4">
         <svg class="fill-orange-400" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M382-240 154-468l57-57 171 171 367-367 57 57-424 424Z"/></svg>  
               <p class="text-icon-fl">Vegetarian
@@ -248,6 +258,7 @@
         </p>
     
        </div>
+    </div>
 </div>
 
 
@@ -260,11 +271,99 @@
     </div>
 <!-- price end -->
 </section>   
-<section class="gallery"></section>
+<section class="gallery bg-[#fdf2e9]">
 
 <div class="container md:mx-auto md:px-32 p-5 sm:px-0 sm:mx-4">
-   <div class="flex"></div>
+    <!-- flexing the gallery with testimonials -->
+    <div class="grid md:grid-cols-2  sm:grid-cols-1 sm:items-center 	 md:items-start sm:justify-items-center	 ">
+        <!-- testmonials start -->
+      <div class="testimoials py-16 self-center p-1">
+<p class="test font-medium	text-lg		text-orange-400">TESTIMONIALS
+</p>
+<h1 class="text-4xl	font-bold mb-10 mt:10 mt:5 text-[#333]">Once you try it, you can't go back
+</h1>
+<!-- imgae testimonials grid start-->
+<div class="grid md:grid-cols-2 sm:grid-cols-1 sm:gap-2">
+<div class="testi-1">
+    <img src="/image/customer-2.jpg" alt="" class="rounded-full h-20 w-20">
+<p class="test-text text-xl	p-4">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+<p class="name p-4 text-[#6f6f6f]">— Dave Bryson
 
+</p>
+</div>
+<div class="testi-1">
+    <img src="/image/customer-1.jpg" alt="" class="rounded-full h-20 w-20">
+<p class="test-text text-xl	p-4">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+<p class="name p-4 text-[#6f6f6f]">— Dave Bryson
+
+</p>
+</div>
+<div class="testi-1">
+    <img src="image/customer-2.jpg" alt="" class="rounded-full h-20 w-20">
+<p class="test-text text-xl	p-4">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+<p class="name p-4 text-[#6f6f6f]">— Dave Bryson
+
+</p>
+</div>
+<div class="testi-1">
+    <img src="/image/customer-1.jpg" alt="" class="rounded-full h-20 w-20">
+<p class="test-text text-xl	p-4">Inexpensive, healthy and great-tasting meals, without even having to order manually! It feels truly magical.</p>
+<p class="name p-4 text-[#6f6f6f]">— Dave Bryson
+
+</p>
+</div>
+
+
+</div>
+<!--  imgae testimonials grid end-->
+
+    </div>
+    <!-- gallery start -->
+      <div class="gallery md:justify-self-start	grid grid-cols-3 overflow-hidden py-2 px-2 gap-4">
+<figure class="gallery-item">
+    <img src="image/gallery-1.jpg" alt="" class="">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-2.jpg" alt="" class="">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-3.jpg" alt="" class="">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-4.jpg" alt="" class="">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-5.jpg" alt="" class="">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-6.jpg" alt="" class="">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-7.jpg" alt="" class="h">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-8.jpg" alt="" class="h">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-9.jpg" alt="" class="h">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-10.jpg" alt="" class="h">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-11.jpg" alt="" class="h">
+</figure>
+<figure class="gallery-item">
+    <img src="image/gallery-12.jpg" alt="" class="h">
+</figure>
+</div>
+    <!-- gallery end -->
+
+    </div>
+
+
+       </div>
+</section>
 </div>
 </main>
 </body>
