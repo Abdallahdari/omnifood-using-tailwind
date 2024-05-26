@@ -29,14 +29,15 @@
     transform: scale(1.1);
   }
   .nav-image{
-    height:20px;
+    height:20px ;
   }
-  
+ 
   @media(max-width: 640px) and (min-width: 350px){
     .f-sanduuq{
   flex-direction:column;
   align-items:center;
     }
+   
     .more-img{
         width:100%;
     }
