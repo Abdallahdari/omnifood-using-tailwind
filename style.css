@@ -28,6 +28,28 @@ body{
 .nav-image {
     height: 20px;
 }
+.icon-wrapper {
+    display: inline-flex; /* or inline-block */
+    align-items: center;
+    justify-content: center;
+    background-color: #fdf2e9;
+    border-radius: 50%; /* Makes the background rounded */
+    padding: 1rem; /* Adjust as needed to create space around the SVG */
+margin:30px 0px;
+}
+.never{
+margin-bottom:20px;
+}
+.para{
+    font-size:20px;
+    color:#333;
+}
+.svg-icon {
+    height: 2rem;
+    width: 2rem;
+}
+
+
 
 @media (max-width: 640px) and (min-width: 350px) {
     .f-sanduuq {
