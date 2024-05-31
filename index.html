@@ -10,10 +10,13 @@
 <script defer src="/main.js"></script>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 <link rel="stylesheet" href="src/output.css">
+
 <link rel="stylesheet" href="style.css">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Bakbak+One&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik:ital,wght@0,300..900;1,300..900&family=Wix+Madefor+Text:ital,wght@0,400..800;1,400..800&display=swap" rel="stylesheet">
+<script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js" type="module"></script>
+  <script src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js" nomodule></script>
 
 </head>
 
@@ -44,17 +47,24 @@
     <section class=" p-3  bg-[#fdf2e9] overflow-hidden ">
         <!-- hero nav start -->
         <div class="sand container mx-auto">
-            <nav class="navbar flex list-none justify-between  md:flex text-black px-12">
+            <nav class="navbar  flex list-none justify-between  md:flex text-black px-12">
                 <img src="image/omnifood-logo.png" alt="" class="nav-image cursor-pointer">
-                <ul class="big-screen-mod flex space-x-6 right-0">
+                <ul class="big-screen-mod sm:hidden md:hidden lg:flex flex space-x-6 right-0">
                     <li><a class="links hover:text-orange-700" href="">Home</a></li>
                     <li><a class="links hover:text-orange-700" href="">About</a></li>
                     <li><a class="links hover:text-orange-700" href="">Price</a></li>
                     <li><a class="links py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="#sec2">Try for free</a></li>
                 </ul>
+                <svg id="icon-btn" class="sm:block md:block lg:hidden fill-orange-400 small-sc 	" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e8eaed"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
             </nav>
             <!-- nav mobile start -->
-            
+            <ul  class="sm-screem h-hidden absolute h-screen w-64 flex flex-col right-0 top-0 bg-[rgba(255,255,255,0.9)] 	 p-4">
+                <li class="h-14	"><a class="links hover:text-orange-700" href="">Home</a></li>
+                <li class="h-14	"><a class="links hover:text-orange-700" href="">Home</a></li>
+                <li class="h-14	"><a class="links hover:text-orange-700" href="">Home</a></li>
+                <li class="h-14	"><a class=" py-2 px-4 bg-blue-400 text-white rounded hover:bg-blue-500" href="#sec2">Try for free</a></li>
+
+            </ul>
             <!-- nav mobile end -->
 
         </div>
@@ -530,6 +540,90 @@
     </div>
 </section>
 
+<section class="cta md:px-32 mb-3 sm:p-10 md:p-36">
+<div class="container full-co md:mx-auto  rounded overflow-hidden sm:mx-2 bg-[#e67e22]">
+<div class="grid con-grid  sm:grid-cols-1 md:grid-cols-2">
+    <div class="formpart self-center">
+<h2 class="heading-1 sm:text-2xl md:text-5xl font-semibold text-[#333] mb-7">Get your first meal for free!
+</h2>
+<p class="heading-2 mb-7 md:text-lg	">Healthy, tasty and hassle-free meals are waiting for you. Start eating well today. You can cancel or pause anytime. And the first meal is on us!
+
+</p>
+        <form action="" class="grid sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-2 gap-7 ">
+<div class="form-flex flex flex-col gap-3 ">
+    <label for="">Full name</label>
+    <input type="text" class="rounded outline-none p-[.7rem]" placeholder="Abdallah abdirizak" required>
+</div>
+<div class="form-flex flex flex-col gap-3 ">
+    <label for=""> Email </label>
+    <input type="email" class="rounded outline-none p-[.7rem]" placeholder="Abdallah abdirizak">
+</div>
+<div class="form-flex flex flex-col gap-3 t">
+    <label for="" class="">Where did you hear from us?
+    </label>
+    <select name="please choose one option" id="" class="py-[.7rem] rounded outline-none">
+        <option value="">please choose one option </option>
+
+        <option value="">From youtube </option>
+        <option value="">From Tiktok</option>
+        <option value="">from facebook</option>
+        <option value="">Other social Media</option>
+
+    </select>
+    
+</div>
+        <button class="self-end	bg-orange-700 text-white p-[.7rem] rounded outline-none">Sign up</button>
+
+
+
+        </form>
+    </div>
+<div class="image-part"></div>
+</div>
+
+</div>
+</section>
+<hr>
+<footer class="md:p-36 sm:p-20">
+    <div class="container  md:mx-auto sm:mx-auto rounded overflow-hidden ">
+    <div class="grid sm:grid-cols-2 md:grid-cols-5 md:place-items-center 	sm:gap-4 md:gap-3">
+        <div class="footer-1 flex flex-col justify-between	">
+            <div class="with-image">
+            <img src="image/omnifood-logo.png" alt="" class="footer-image h-[1.6rem]">
+<ul class="social-tags flex gap-8 mt-5 ">
+<li><a href="" class="text-2xl text-[#767676]"><ion-icon name="logo-facebook" class=""></ion-icon></a></li>
+
+<li><a href="" class="text-2xl text-[#767676]	"><ion-icon name="logo-instagram"></ion-icon></a></li>
+<li><a href="" class="text-2xl text-[#767676]"><ion-icon  name="logo-twitter"></ion-icon>
+</a></li>
+
+</ul>
+        </div>
+        <div class="copy-right mt-[auto]">Copyright © 2024 by Omnifood, Inc. All rights reserved.</div>
+
+    </div>
+        <div class="footer-1">
+            <p class="contact mb-8">Contact us</p>
+         <Address>
+            <p class="address-1 mb-3">623 Harrison St., 2nd Floor, San Francisco, CA 9410</p>
+            <p class="address-2">
+                <a href="" class="mobile-number">623 Harrison St., 2nd Floor, San Francisco, CA 9410</a>
+            <br>
+            <div class="email">hello@omnifood.com
+
+            </div>
+            </p>
+         </Address>
+        </div>
+        <div class="footer-1">Footer-3</div>
+        <div class="footer-1">Footer-3</div>
+        <div class="footer-1">Footer-3</div>
+
+
+    </div>
+    </div>
+
+</footer>
 
 </div>
 </main>

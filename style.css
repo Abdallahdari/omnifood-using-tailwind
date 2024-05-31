@@ -49,12 +49,63 @@ margin-bottom:20px;
     width: 2rem;
 }
 
+/* @mwdia(min-width: 700p) and (max-width: 1000px){
+    .big-screen-mod {
+        display: none;
+    }
+    .small-sc{
+        display:bloc;
+            }
+} */
 
+.h-hidden{
+    display:none;
+}
+.con-grid {
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
 
+    grid-template-columns: 2fr 1fr ;
+}
+.full-co{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15)
+}
+.formpart{
+    padding:4.8rem 6.4rem 6.4rem 6.4rem;
+}
+
+.image-part{
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(235, 151, 78, 0.35),
+        rgba(230, 125, 34, 0.35)
+      ),
+      url("image/eating.jpg");
+    background-size: cover;
+    background-position: center;
+    boreder-radius:20px;
+}
+@media(max-width:850px){
+    .con-grid{
+        grid-template-columns:  1fr ;
+
+    }
+.image-part{
+    order:-1;
+    height:10rem
+}
+.formpart{
+    padding:2.8rem 4.4rem 4.4rem 2.4rem;
+}
+}
+.create-con{
+    box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15)}
 @media (max-width: 640px) and (min-width: 350px) {
     .f-sanduuq {
         flex-direction: column;
         align-items: center;
+    }
+    .create-con{
+        grid-template-columns:1fr;
     }
     .more-img {
         width: 100%;
@@ -62,6 +113,7 @@ margin-bottom:20px;
     .big-screen-mod {
         display: none;
     }
+  
     .image-with-text {
         flex-direction: column;
         margin-bottom: 12px;
@@ -89,7 +141,9 @@ margin-bottom:20px;
     .company-i {
         height: 10px;
     }
+   
 }
+
 
 @media (max-width: 350px) {
     .f-sanduuq {
@@ -101,5 +155,18 @@ margin-bottom:20px;
         margin-bottom: 12px;
         text-align:center;
     }
-
+    .big-screen-mod {
+        display: none;
+    }
+    .sm-screem{
+        width:100%;
+        background-color:trasparent;
+    }
+    .navbar{
+        display:none;
+    }
+}
+@media (max-width: 350px) {
+ 
+    
 }
